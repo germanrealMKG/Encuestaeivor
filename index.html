@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <form action="" style="margin-left: 20px; margin-right:20px">
+        <!--Sección 1 Datos del viaje y motivo-->
+        <div class="DatosDelViaje">
+            <h2><b>Datos del viaje</b></h2>
+            <br>
+            <div>
+                <p>1. ¿Qué trayecto está realizando?</p>
+                <div style="float:left">
+                   
+                    <label for="location" class="block text-sm font-medium text-gray-700">Origen</label>
+                    <select id="location" name="location" class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md">
+                      <option>Las Palmas GC</option>
+                      <option >SC Tenerife</option>
+                      <option>Puerto Del Rosario</option>
+                      <option>Morrojable</option>
+                      <option>Playa Blanca</option>
+                      <option>Corralejo...</option>
+                    </select>
+                  </div>
+                  <div style="float:left">
+                    <label for="location" class="block text-sm font-medium text-gray-700">Destino</label>
+                    <select id="location" name="location" class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md">
+                        <option>Las Palmas GC</option>
+                      <option >SC Tenerife</option>
+                      <option>Puerto Del Rosario</option>
+                      <option>Morrojable</option>
+                      <option>Playa Blanca</option>
+                      <option>Corralejo...</option>
+                    </select>
+                  </div>
+            </div>
+            <div style="clear:both">
+                <p>2. ¿Motivo principal del viaje? *</p>
+                
+                <fieldset class="mt-4">
+                  <legend class="sr-only">Motivo del viaje</legend>
+                  <div class="space-y-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-10">
+                    <div class="flex items-center">
+                      <input id="Trabajo" name="motivo_viaje" type="radio"  class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                      <label for="Trabajo" class="ml-3 block text-sm font-medium text-gray-700"> Trabajo </label>
+                    </div>
+              
+                    <div class="flex items-center">
+                      <input id="Ocio" name="motivo_viaje" type="radio" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                      <label for="Ocio" class="ml-3 block text-sm font-medium text-gray-700"> Ocio </label>
+                    </div>
+              
+                    <div class="flex items-center">
+                      <input id="Familiar" name="motivo_viaje" type="radio" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                      <label for="Familiar" class="ml-3 block text-sm font-medium text-gray-700"> Familiar </label>
+                    </div>
+
+                    <div class="flex items-center">
+                        <input id="Otros" name="motivo_viaje" type="radio" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                        <label for="Otros" class="ml-3 block text-sm font-medium text-gray-700"> Otros </label>
+                      </div>
+                  </div>
+                </fieldset>
+              </div>
+              <br>
+              <br>
+        </div>
+
+
+        <!--Sección 2 Valoración del buque-->
+        <div class="ValoracionDelBuque">
+            <p>(Responda del 1 al 4. Siendo 1 “Nada satisfecho” y 4 “Totalmente satisfecho”)</p>
+            <br>
+            <h2><b>Valoración del buque</b></h2>
+            <br>
+            <div>
+                <p>3. ¿Cuál es su valoración del buque? *</p>
+                
+                <fieldset class="mt-4">
+                  <legend class="sr-only">Valoracion del buque</legend>
+                  <div class="space-y-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-10">
+                    <div class="flex items-center">
+                      <input id="valoracion_del_buque_1" name="valoracion_buque" type="radio"  class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                      <label for="valoracion_del_buque_1" class="ml-3 block text-sm font-medium text-gray-700"> 1 </label>
+                    </div>
+              
+                    <div class="flex items-center">
+                      <input id="valoracion_del_buque_2" name="valoracion_buque" type="radio" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                      <label for="valoracion_del_buque_2" class="ml-3 block text-sm font-medium text-gray-700"> 2 </label>
+                    </div>
+              
+                    <div class="flex items-center">
+                      <input id="valoracion_del_buque_3" name="valoracion_buque" type="radio" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                      <label for="valoracion_del_buque_3" class="ml-3 block text-sm font-medium text-gray-700"> 3 </label>
+                    </div>
+
+                    <div class="flex items-center">
+                        <input id="valoracion_del_buque_4" name="valoracion_buque" type="radio" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                        <label for="valoracion_del_buque_4" class="ml-3 block text-sm font-medium text-gray-700"> 4 </label>
+                      </div>
+                  </div>
+                </fieldset>
+                <br>
+              </div>
+        </div>
+
+
+        <!--Sección 3 Valoración de Servicios a bordo-->
+        <div class="ValoraciondeServicios">
+            <h2><b>Valoración de Servicios a bordo</b></h2>
+            <br>
+            <div>
+                <!--4-->
+                <p>4. ¿Cuál es su valoración de la Amabilidad/Profesionalidad del personal? *</p>
+                <fieldset class="mt-4">
+                  <legend class="sr-only">Valoracion de Servicios a bordo</legend>
+                  <div class="space-y-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-10">
+                    <div class="flex items-center">
+                      <input id="valoracion_amabilidad_1" name="valoracion_amabilidad" type="radio"  class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                      <label for="valoracion_amabilidad_1" class="ml-3 block text-sm font-medium text-gray-700"> 1 </label>
+                    </div>
+              
+                    <div class="flex items-center">
+                      <input id="valoracion_amabilidad_2" name="valoracion_amabilidad" type="radio" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                      <label for="valoracion_amabilidad_2" class="ml-3 block text-sm font-medium text-gray-700"> 2 </label>
+                    </div>
+              
+                    <div class="flex items-center">
+                      <input id="valoracion_amabilidad_3" name="valoracion_amabilidad" type="radio" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                      <label for="valoracion_amabilidad_3" class="ml-3 block text-sm font-medium text-gray-700"> 3 </label>
+                    </div>
+
+                    <div class="flex items-center">
+                        <input id="valoracion_amabilidad_4" name="valoracion_amabilidad" type="radio" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                        <label for="valoracion_amabilidad_4" class="ml-3 block text-sm font-medium text-gray-700"> 4 </label>
+                      </div>
+                  </div>
+                </fieldset>
+<br>
+
+                <!--5-->
+                <p>5. ¿Cuál es su valoración de la Oferta de restauración a bordo?</p>
+                <fieldset class="mt-4">
+                    <legend class="sr-only">Valoracion de Servicios a bordo</legend>
+                    <div class="space-y-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-10">
+                      <div class="flex items-center">
+                        <input id="valoracion_restauracion_1" name="valoracion_restauracion" type="radio"  class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                        <label for="valoracion_restauracion_1" class="ml-3 block text-sm font-medium text-gray-700"> 1 </label>
+                      </div>
+                
+                      <div class="flex items-center">
+                        <input id="valoracion_restauracion_2" name="valoracion_restauracion" type="radio" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                        <label for="valoracion_restauracion_2" class="ml-3 block text-sm font-medium text-gray-700"> 2 </label>
+                      </div>
+                
+                      <div class="flex items-center">
+                        <input id="valoracion_restauracion_3" name="valoracion_restauracion" type="radio" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                        <label for="valoracion_restauracion_3" class="ml-3 block text-sm font-medium text-gray-700"> 3 </label>
+                      </div>
+  
+                      <div class="flex items-center">
+                          <input id="valoracion_restauracion_4" name="valoracion_restauracion" type="radio" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                          <label for="valoracion_restauracion_4" class="ml-3 block text-sm font-medium text-gray-700"> 4 </label>
+                        </div>
+                    </div>
+                  </fieldset>
+<br>
+                <!--6-->
+                <p>6. ¿Cuál es su valoración de la Oferta de productos y precios de tienda a bordo?</p>
+                <fieldset class="mt-4">
+                    <legend class="sr-only">Valoracion de Servicios a bordo</legend>
+                    <div class="space-y-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-10">
+                      <div class="flex items-center">
+                        <input id="valoracion_productos_1" name="valoracion_productos" type="radio"  class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                        <label for="valoracion_productos_1" class="ml-3 block text-sm font-medium text-gray-700"> 1 </label>
+                      </div>
+                
+                      <div class="flex items-center">
+                        <input id="valoracion_productos_2" name="valoracion_productos" type="radio" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                        <label for="valoracion_productos_2" class="ml-3 block text-sm font-medium text-gray-700"> 2 </label>
+                      </div>
+                
+                      <div class="flex items-center">
+                        <input id="valoracion_productos_3" name="valoracion_productos" type="radio" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                        <label for="valoracion_productos_3" class="ml-3 block text-sm font-medium text-gray-700"> 3 </label>
+                      </div>
+  
+                      <div class="flex items-center">
+                          <input id="valoracion_productos_4" name="valoracion_productos" type="radio" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                          <label for="valoracion_productos_4" class="ml-3 block text-sm font-medium text-gray-700"> 4 </label>
+                        </div>
+                    </div>
+                  </fieldset>
+
+<br>
+                <!--7-->
+                <p>7. ¿Qué le han parecido las opciones de ocio del buque? *</p>
+                <fieldset class="mt-4">
+                    <legend class="sr-only">Valoracion de Servicios a bordo</legend>
+                    <div class="space-y-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-10">
+                      <div class="flex items-center">
+                        <input id="valoracion_ocio_1" name="valoracion_ocio" type="radio"  class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                        <label for="valoracion_ocio_1" class="ml-3 block text-sm font-medium text-gray-700"> 1 </label>
+                      </div>
+                
+                      <div class="flex items-center">
+                        <input id="valoracion_ocio_2" name="valoracion_ocio" type="radio" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                        <label for="valoracion_ocio_2" class="ml-3 block text-sm font-medium text-gray-700"> 2 </label>
+                      </div>
+                
+                      <div class="flex items-center">
+                        <input id="valoracion_ocio_3" name="valoracion_ocio" type="radio" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                        <label for="valoracion_ocio_3" class="ml-3 block text-sm font-medium text-gray-700"> 3 </label>
+                      </div>
+  
+                      <div class="flex items-center">
+                          <input id="valoracion_ocio_4" name="valoracion_ocio" type="radio" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                          <label for="valoracion_ocio_4" class="ml-3 block text-sm font-medium text-gray-700"> 4 </label>
+                        </div>
+                    </div>
+                  </fieldset>
+              </div>
+              <br>
+        </div>
+
+
+        <!--Sección 4 Valoración de Instalaciones-->
+        <div class="ValoracionDelBuque">
+            <h2><b>Valoración de Instalaciones</b></h2>
+
+           <!--8-->
+            <br>
+            <div>
+                <p>8. ¿Ha viajado en camarote o butaca? *</p>
+                
+                <fieldset class="mt-4">
+                  <legend class="sr-only">Valoración de Instalaciones</legend>
+                  <div class="space-y-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-10">
+                    <div class="flex items-center">
+                      <input id="camarote" name="camarote_o_butaca" type="radio"  class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                      <label for="camarote" class="ml-3 block text-sm font-medium text-gray-700"> Camarote </label>
+                    </div>
+              
+                    <div class="flex items-center">
+                      <input id="Butaca" name="camarote_o_butaca" type="radio" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                      <label for="Butaca" class="ml-3 block text-sm font-medium text-gray-700"> Butaca </label>
+                    </div>
+                  </div>
+                </fieldset>
+            </div>
+
+          <!--9-->
+            <br>
+            <div>
+                <p>9. ¿Cuál es su valoración de su acomodación? *</p>
+            
+                <fieldset class="mt-4">
+                  <legend class="sr-only">Valoracion de acomodacion</legend>
+                  <div class="space-y-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-10">
+                    <div class="flex items-center">
+                      <input id="valoracion_acomodacion_1" name="valoracion_acomodacion" type="radio"  class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                      <label for="valoracion_acomodacion_1" class="ml-3 block text-sm font-medium text-gray-700"> 1 </label>
+                    </div>
+              
+                    <div class="flex items-center">
+                      <input id="valoracion_acomodacion_2" name="valoracion_acomodacion" type="radio" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                      <label for="valoracion_acomodacion_2" class="ml-3 block text-sm font-medium text-gray-700"> 2 </label>
+                    </div>
+              
+                    <div class="flex items-center">
+                      <input id="valoracion_acomodacion_3" name="valoracion_acomodacion" type="radio" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                      <label for="valoracion_acomodacion_3" class="ml-3 block text-sm font-medium text-gray-700"> 3 </label>
+                    </div>
+
+                    <div class="flex items-center">
+                        <input id="valoracion_acomodacion_4" name="valoracion_acomodacion" type="radio" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                        <label for="valoracion_acomodacion_4" class="ml-3 block text-sm font-medium text-gray-700"> 4 </label>
+                      </div>
+                  </div>
+                </fieldset>
+            </div>
+
+            <!--10-->
+            <br>
+            <div>
+                <p>10. ¿Le pareció adecuado el grado de mantenimiento de las instalaciones? *</p>
+            
+                <fieldset class="mt-4">
+                  <legend class="sr-only">Valoracion de mantenimiento</legend>
+                  <div class="space-y-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-10">
+                    <div class="flex items-center">
+                      <input id="valoracion_mantenimiento_1" name="valoracion_mantenimiento" type="radio"  class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                      <label for="valoracion_mantenimiento_1" class="ml-3 block text-sm font-medium text-gray-700"> 1 </label>
+                    </div>
+              
+                    <div class="flex items-center">
+                      <input id="valoracion_mantenimiento_2" name="valoracion_mantenimiento" type="radio" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                      <label for="valoracion_mantenimiento_2" class="ml-3 block text-sm font-medium text-gray-700"> 2 </label>
+                    </div>
+              
+                    <div class="flex items-center">
+                      <input id="valoracion_mantenimiento_3" name="valoracion_mantenimiento" type="radio" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                      <label for="valoracion_mantenimiento_3" class="ml-3 block text-sm font-medium text-gray-700"> 3 </label>
+                    </div>
+
+                    <div class="flex items-center">
+                        <input id="valoracion_mantenimiento_4" name="valoracion_mantenimiento" type="radio" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                        <label for="valoracion_mantenimiento_4" class="ml-3 block text-sm font-medium text-gray-700"> 4 </label>
+                      </div>
+                  </div>
+                </fieldset>
+            </div>
+
+            <!--11-->
+            <br>
+            <div>
+                <p>11. ¿Cuál es su valoración de la limpieza general del buque? *</p>
+            
+                <fieldset class="mt-4">
+                  <legend class="sr-only">Valoracion de limpienza en general</legend>
+                  <div class="space-y-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-10">
+                    <div class="flex items-center">
+                      <input id="valoracion_limpieza_general_1" name="valoracion_limpieza_general" type="radio"  class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                      <label for="valoracion_limpieza_general_1" class="ml-3 block text-sm font-medium text-gray-700"> 1 </label>
+                    </div>
+              
+                    <div class="flex items-center">
+                      <input id="valoracion_limpieza_general_2" name="valoracion_limpieza_general" type="radio" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                      <label for="valoracion_limpieza_general_2" class="ml-3 block text-sm font-medium text-gray-700"> 2 </label>
+                    </div>
+              
+                    <div class="flex items-center">
+                      <input id="valoracion_limpieza_general_3" name="valoracion_limpieza_general" type="radio" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                      <label for="valoracion_limpieza_general_3" class="ml-3 block text-sm font-medium text-gray-700"> 3 </label>
+                    </div>
+
+                    <div class="flex items-center">
+                        <input id="valoracion_limpieza_general_4" name="valoracion_limpieza_general" type="radio" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                        <label for="valoracion_limpieza_general_4" class="ml-3 block text-sm font-medium text-gray-700"> 4 </label>
+                      </div>
+                  </div>
+                </fieldset>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
