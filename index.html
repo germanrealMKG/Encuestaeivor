@@ -8,6 +8,9 @@
     <title>Formulario</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <style>
@@ -898,7 +901,7 @@
                                                                 <li
                                                                     class="w-full border-b border-grey-200 sm:border-b-0 sm:border-r light:border-grey-600">
                                                                     <div class="flex items-center pl-3  text-[#D9002E]">
-                                                                        <input id="si_mascota" type="radio" value=""
+                                                                        <input id="si_mascota" type="radio" value="true"
                                                                             name="list-radio10"
                                                                             class="form-radio focus:outline-none focus:shadow-outline ">
                                                                         <label for="si-mascota"
@@ -909,7 +912,7 @@
                                                                 <li
                                                                     class="w-full border-b border-grey-200 sm:border-b-0 sm:border-r light:border-grey-600">
                                                                     <div class="flex items-center pl-3 text-[#D9002E]">
-                                                                        <input id="no_mascota" type="radio" value=""
+                                                                        <input id="no_mascota" type="radio" value="false"
                                                                             name="list-radio10"
                                                                             class="form-radio focus:outline-none focus:shadow-outline">
                                                                         <label for="no-mascota"
@@ -1300,7 +1303,15 @@
         
     }
     
- 
+    $('#seccion-mascota-si-o-no input').on('change', (e) => {
+                var pet = e.target.value === 'true';
+
+                if(pet){
+                    $('#seccion-valoracion-mascota').css('display', 'block');
+                }else{
+                    $('#seccion-valoracion-mascota').css('display', 'none');
+                }
+            })
     
 
 </script>
