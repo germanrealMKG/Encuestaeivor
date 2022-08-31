@@ -119,7 +119,7 @@
                                                                 class="block text-sm font-medium text-gray-700">Origen</label>
                                                             <select id="location1" name="location" required
                                                                 class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md">
-                                                                <option value="" disabled selected>Seleccione una isla
+                                                                <option value="" disabled selected>Seleccione puerto de origen
                                                                 </option>
                                                                 <option value="LPGC">Las Palmas GC</option>
                                                                 <option value="TEN">SC Tenerife</option>
@@ -136,7 +136,7 @@
                                                                 class="block text-sm font-medium text-gray-700">Destino</label>
                                                             <select id="location2" name="location" required
                                                                 class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md">
-                                                                <option value="" disabled selected>Seleccione una isla
+                                                                <option value="" disabled selected>Seleccione puerto de destino
                                                                 </option>
                                                                 <option value="LPGC">Las Palmas GC</option>
                                                                 <option value="TEN">SC Tenerife</option>
@@ -161,47 +161,61 @@
 
                                                 <div class="content-center flex flex-wrap " >
 
-                                                    <div class="grid grid-cols-4 mt-4 w-full gap-4 " >
-                                                        <div class="flex items-center text-[#D9002E]"  >
-                                                            
-                                                            <input id="Trabajo" name="motivo_viaje" type="radio" required
-                                                                class="form-radio focus:outline-none focus:shadow-outline">
-                                                            <label for="Trabajo"
-                                                                class="ml-3 block text-sm font-medium text-gray-700">
-                                                                Trabajo </label>
-                                                        </div>
+                                                    
 
-                                                        <div class="flex items-center text-[#D9002E]">
-                                                            <input id="Ocio" name="motivo_viaje" type="radio"
-                                                                class="form-radio focus:outline-none focus:shadow-outline">
-                                                            <label for="Ocio"
-                                                                class="ml-3 block text-sm font-medium text-gray-700">
-                                                                Ocio </label>
-                                                        </div>
+                                                    
 
-                                                        <div class="flex items-center text-[#D9002E]">
-                                                            <input id="Familiar" name="motivo_viaje" type="radio"
-                                                                class="form-radio focus:outline-none focus:shadow-outline">
-                                                            <label for="Familiar"
-                                                                class="ml-3 block text-sm font-medium text-gray-700">
-                                                                Familiar </label>
-                                                        </div>
+                                                        <ul
+                                                            class="items-center w-full text-sm font-medium  bg-white rounded-lg border border-grey-200 sm:flex dark:text-black">
+                                                            <li
+                                                                class="w-full border-b border-grey-200 sm:border-b-0 sm:border-r light:border-grey-600">
+                                                                <div class="flex items-center pl-3  text-[#D9002E]">
+                                                                    <input id="trabajo" type="radio"
+                                                                        value="" name="motivo_viaje"
+                                                                        class="form-radio focus:outline-none focus:shadow-outline ">
+                                                                    <label for="trabajo"
+                                                                        class="py-3 ml-2 w-full text-sm font-medium  text-black">Trabajo
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <li
+                                                                class="w-full border-b border-grey-200 sm:border-b-0 sm:border-r light:border-grey-600">
+                                                                <div class="flex items-center pl-3 text-[#D9002E]">
+                                                                    <input id="ocio" type="radio"
+                                                                        value="" name="motivo_viaje"
+                                                                        class="form-radio focus:outline-none focus:shadow-outline">
+                                                                    <label for="ocio"
+                                                                        class="py-3 ml-2 w-full text-sm font-medium text-black">Ocio</label>
+                                                                </div>
+                                                            </li>
+                                                            <li
+                                                                class="w-full border-b border-grey-200 sm:border-b-0 sm:border-r light:border-grey-600">
+                                                                <div class="flex items-center pl-3 text-[#D9002E]">
+                                                                    <input id="familiar" type="radio"
+                                                                        value="" name="motivo_viaje"
+                                                                        class="form-radio focus:outline-none focus:shadow-outline">
+                                                                    <label for="familiar"
+                                                                        class="py-3 ml-2 w-full text-sm font-medium text-black ">Familiar</label>
+                                                                </div>
+                                                            </li>
+                                                            <li class="w-full light:border-grey-600">
+                                                                <div class="flex items-center pl-3 text-[#D9002E]">
+                                                                    <input id="otros" type="radio"
+                                                                        value="" name="motivo_viaje"
+                                                                        class="form-radio focus:outline-none focus:shadow-outline">
+                                                                    <label for="otros"
+                                                                        class="py-3 ml-2 w-full text-sm font-medium text-black ">Otros</label>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
 
-                                                        <div class="flex items-center text-[#D9002E]">
-                                                            <input id="Otros" name="motivo_viaje" type="radio"
-                                                                class="form-radio focus:outline-none focus:shadow-outline">
-                                                            <label for="Otros"
-                                                                class="ml-3 block text-sm font-medium text-gray-700">
-                                                                Otros </label>
-
-                                                        </div>
-                                                    </div>
+                                                    
 
                                                 </div>
 
                                             </div>
 
-                                       
+                                          
                                     </div>
                                 </div>
                             </div>
@@ -1189,10 +1203,13 @@
                         </div>
 
                     </div>
+                    
                     <!-- / paso contenido -->
                 </div>
             </div>
-
+            
+        </form>
+        
             <!-- Navegación inferior -->
             <div class="fixed bottom-0 left-0 right-0 py-5 bg-white shadow-md" x-show="paso != 'complete'">
                 <div class="max-w-3xl mx-auto px-4">
@@ -1203,7 +1220,7 @@
                         </div>
 
                         <div class="w-1/2 text-right">
-                            <button x-show="paso < 6" @click="paso++"
+                            <button x-show="paso < 6 " @click="paso++"
                                 class="w-32 focus:outline-none border border-transparent py-2 px-5 rounded-lg shadow-sm text-center text-white bg-[#D9002E] hover:bg-[#D90051] font-medium">Siguiente</button>
 
                             <button @click="paso = 'complete'" x-show="paso === 6"
@@ -1214,7 +1231,7 @@
             </div>
 
         </div>
-    </form>
+    
 </body>
 
 
@@ -1223,8 +1240,15 @@
         return {
             paso: 1,
         }
+        
     }
-
+    function test(){
+        document.addEventListener('alpine:init', () => {
+  // Single value store definition
+  Alpine.store('count', 0)
+})
+    }
+   
     
 
 </script>
