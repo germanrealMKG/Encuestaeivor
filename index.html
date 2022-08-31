@@ -98,13 +98,14 @@
                     <!-- /Navegcion superior -->
 
                     <!-- paso contenido -->
+                    <form action="/index.html">
                     <div class="py-10">
                         <div x-show.transition.in="paso === 1" id="datos-del-viaje">
                             <div class="mb-5 text-center">
 
                                 <div class="flex items-center justify-center p-12">
                                     <div class="mx-auto w-full max-w-[550px] bg-white">
-                                        <form action="/index.html">
+                                       
                                             <div class="mb-5 pt-3">
                                                 <label
                                                     class="mb-5 block text-base font-semibold text-[#07074D] sm:text-xl">
@@ -158,11 +159,12 @@
                                                     2. ¿Motivo principal del viaje?
                                                 </label>
 
-                                                <div class="content-center flex flex-wrap ">
+                                                <div class="content-center flex flex-wrap " >
 
-                                                    <div class="grid grid-cols-4 mt-4 w-full gap-4 ">
-                                                        <div class="flex items-center text-[#D9002E]">
-                                                            <input id="Trabajo" name="motivo_viaje" type="radio"
+                                                    <div class="grid grid-cols-4 mt-4 w-full gap-4 " >
+                                                        <div class="flex items-center text-[#D9002E]"  >
+                                                            
+                                                            <input id="Trabajo" name="motivo_viaje" type="radio" required
                                                                 class="form-radio focus:outline-none focus:shadow-outline">
                                                             <label for="Trabajo"
                                                                 class="ml-3 block text-sm font-medium text-gray-700">
@@ -199,7 +201,7 @@
 
                                             </div>
 
-                                        </form>
+                                       
                                     </div>
                                 </div>
                             </div>
@@ -803,7 +805,7 @@
                                 <div class="flex items-center justify-center p-12">
                                     <div class="mx-auto w-full max-w-[550px] bg-white">
 
-                                        <form>
+                                      
 
                                             <!--Valoración de animaes-->
                                             <div class="mb-5 pt-3" id="instalaciones">
@@ -913,7 +915,7 @@
 
                                             </div>
 
-                                        </form>
+                                       
                                     </div>
                                 </div>
                             </div>
@@ -928,7 +930,7 @@
                                 <div class="flex items-center justify-center p-12">
                                     <div class="mx-auto w-full max-w-[550px] bg-white">
 
-                                        <form>
+                                  
 
                                             <!--Valoración final-->
                                             <div class="mb-5 pt-3" id="instalaciones">
@@ -1180,7 +1182,7 @@
                                                 </div>
                                             </div>
 
-                                        </form>
+                                     
                                     </div>
                                 </div>
                             </div>
@@ -1212,6 +1214,7 @@
             </div>
 
         </div>
+    </form>
 </body>
 
 
@@ -1222,6 +1225,7 @@
         }
     }
 
+    
 
 </script>
 
